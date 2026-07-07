@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\build\PanTao_2\PanTao_2.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\build\PanTao_2\PanTao_2.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Jul 07 10:38:06 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Jul 07 11:57:45 2026
 <BR><P>
 <H3>Maximum Stack Usage =        184 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -569,9 +569,9 @@ Global Symbols
 <P><STRONG><a name="[a2]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_memcpy4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memcpy
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_ReadData
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memcpy
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DigitalTubeTask_Init
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_ReadData
 </UL>
 
 <P><STRONG><a name="[18c]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
@@ -692,11 +692,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendMesg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTaskInit
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mesg_Task
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_ShortCallback
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_LongCallback
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART3_Deal
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Deal
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mesg_Task
 </UL>
 
 <P><STRONG><a name="[b2]"></a>Comm_SendMesg_FillData_withResend</STRONG> (Thumb, 112 bytes, Stack size 40 bytes, CommunicateTask.o(i.Comm_SendMesg_FillData_withResend))
@@ -707,10 +707,10 @@ Global Symbols
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendMesg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTaskInit
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mesg_Task
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Task
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switch_ShortCallback
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hole_ShortCallback
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mesg_Task
 </UL>
 
 <P><STRONG><a name="[b4]"></a>Communicate_Init</STRONG> (Thumb, 152 bytes, Stack size 48 bytes, CommunicateTask.o(i.Communicate_Init))
@@ -840,18 +840,18 @@ Global Symbols
 
 <P><STRONG><a name="[d4]"></a>EventGroupCheckBits</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, port_event.o(i.EventGroupCheckBits))
 <BR><BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTask
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mesg_Task
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Task
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FlashTask
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Deal
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mesg_Task
 </UL>
 
 <P><STRONG><a name="[d5]"></a>EventGroupClearBits</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, port_event.o(i.EventGroupClearBits))
-<BR><BR>[Called By]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mesg_Task
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyAll_Init
+<BR><BR>[Called By]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyAll_Init
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hole_ShortCallback
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FlashTask
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ValveTimeout_callback
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mesg_Task
 </UL>
 
 <P><STRONG><a name="[ab]"></a>EventGroupSetBits</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, port_event.o(i.EventGroupSetBits))
@@ -1046,10 +1046,10 @@ Global Symbols
 
 <P><STRONG><a name="[ca]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
 <BR><BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DigitalTubeTask_Init
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Refresh
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Device_Switch_Init
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switch_SetState
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DigitalTubeTask_Init
 </UL>
 
 <P><STRONG><a name="[ad]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_hal.o(i.HAL_GetTick))
@@ -1551,8 +1551,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGB_SetMoreColor
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGB_LocalRefresh
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Light_Task
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ValveTimeout_callback
+<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ValveTimeout_callback
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Light_Task
 </UL>
 
 <P><STRONG><a name="[136]"></a>Light_Init</STRONG> (Thumb, 284 bytes, Stack size 24 bytes, LightTask.o(i.Light_Init))
@@ -1780,13 +1780,13 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_IWDG_Refresh
 <LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_TogglePin
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mesg_Task
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Light_Task
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Task
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FlashTask
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CtrlTask
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_Task
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventGroupCheckBits
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mesg_Task
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Light_Task
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1794,14 +1794,14 @@ Global Symbols
 <P><STRONG><a name="[154]"></a>MainTaskInit</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, MainTask.o(i.MainTaskInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = MainTaskInit &rArr; KeyAll_Init &rArr; Switch_Init &rArr; Key_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DigitalTubeTask_Init
-<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Light_Init
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyAll_Init
+<BR>[Calls]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyAll_Init
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FlashTask_Init
 <LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Device_Init
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_Init
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Comm_SendMesg_FillData_withResend
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Comm_SendMesg_FillData
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DigitalTubeTask_Init
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Light_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1936,7 +1936,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_Rx_Init
 </UL>
 
-<P><STRONG><a name="[63]"></a>Rx_Receive</STRONG> (Thumb, 158 bytes, Stack size 24 bytes, port_communicate.o(i.Rx_Receive))
+<P><STRONG><a name="[63]"></a>Rx_Receive</STRONG> (Thumb, 186 bytes, Stack size 24 bytes, port_communicate.o(i.Rx_Receive))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Rx_Receive
 </UL>
 <BR>[Calls]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
@@ -2282,8 +2282,8 @@ Local Symbols
 <P><STRONG><a name="[8a]"></a>RingBuffer_Read</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, app_ringbuf.o(i.RingBuffer_Read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = RingBuffer_Read
 </UL>
-<BR>[Calls]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBuffer_GetDatalen
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBuffer_GetDatalen
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_ringbuf.o(i.RingBuffer_Init)
 </UL>
@@ -2295,8 +2295,8 @@ Local Symbols
 <P><STRONG><a name="[89]"></a>RingBuffer_Write</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, app_ringbuf.o(i.RingBuffer_Write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = RingBuffer_Write
 </UL>
-<BR>[Calls]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBuffer_GetSpace
+<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RingBuffer_GetSpace
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_ringbuf.o(i.RingBuffer_Init)
 </UL>
@@ -2518,8 +2518,8 @@ Local Symbols
 <P><STRONG><a name="[b1]"></a>USART_SendMesg</STRONG> (Thumb, 84 bytes, Stack size 32 bytes, CommunicateTask.o(i.USART_SendMesg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = USART_SendMesg &rArr; CRC16_calculate
 </UL>
-<BR>[Calls]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRC16_calculate
+<BR>[Calls]<UL><LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CRC16_calculate
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Comm_SendMesg_FillData_withResend
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Comm_SendMesg_FillData
@@ -2653,8 +2653,8 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = DigitalTubeTask_Init &rArr; DigitalTube_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DigitalTube_Init
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTaskInit
 </UL>

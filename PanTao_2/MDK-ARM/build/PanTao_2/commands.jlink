@@ -1,6 +1,0 @@
-r
-halt
-loadfile "e:\单片机项目\Source\PanTao_2\MDK-ARM\build\PanTao_2\PanTao_2.hex"
-r
-go
-exit

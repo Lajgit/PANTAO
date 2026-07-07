@@ -1,35 +1,96 @@
-[2026-06-25 20:16:55]	[info] incremental build: 1 source files changed
+[2026-07-07 11:41:11]	[info] incremental build: 51 source files changed
 These source files will be recompiled
 ---
-'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\CommunicateTask.c': source file has been changed.
+'e:\单片机项目\Source\蟠桃\PanTao_2\Core\Src\dma.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Core\Src\gpio.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Core\Src\iwdg.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Core\Src\main.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Core\Src\spi.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Core\Src\stm32f4xx_hal_msp.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Core\Src\stm32f4xx_it.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Core\Src\system_stm32f4xx.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Core\Src\tim.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Core\Src\usart.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_iwdg.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Lib\src\app_crc.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Lib\src\app_device.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Lib\src\app_flash.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Lib\src\app_list.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Lib\src\app_ringbuf.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Lib\src\app_ws2812.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Port\src\port_communicate.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Port\src\port_device.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Port\src\port_digitaltube.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Port\src\port_event.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Port\src\port_flash.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Port\src\port_key.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Port\src\port_light.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Port\src\port_lighteffect.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\CommunicateTask.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\CtrlTask.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\FlashTask.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\InterruptTask.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\KeyTask.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\LightTask.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\MainTask.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\MesgTask.c': object (.o) file not exist
+'e:\单片机项目\Source\蟠桃\PanTao_2\MDK-ARM\startup_stm32f407xx.s': object (.o) file not exist
 
-[2026-06-25 20:16:55]	[done]
+[2026-07-07 11:41:13]	[done]
 	build successfully !
 
-[2026-06-26 15:16:42]	[info] incremental build: 1 source files changed
-These source files will be recompiled
----
-'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\CommunicateTask.c': source file has been changed.
-
-[2026-06-26 15:16:42]	[done]
+[2026-07-07 11:41:56]	[done]
 	build successfully !
 
-[2026-07-07 10:33:56]	[info] incremental build: 4 source files changed
+[2026-07-07 11:54:27]	[done]
+	build successfully !
+
+[2026-07-07 11:54:51]	[info] incremental build: 1 source files changed
 These source files will be recompiled
 ---
-'e:\单片机项目\Source\蟠桃\PanTao_2\Lib\src\app_ringbuf.c': source file has been changed.
-'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\CommunicateTask.c': source file has been changed.
-'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\KeyTask.c': source file has been changed.
 'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\MainTask.c': source file has been changed.
 
-[2026-07-07 10:33:57]	[done]
+[2026-07-07 11:54:51]	[done]
 	build successfully !
 
-[2026-07-07 10:38:05]	[info] incremental build: 1 source files changed
+[2026-07-07 11:55:20]	[info] incremental build: 1 source files changed
 These source files will be recompiled
 ---
-'e:\单片机项目\Source\蟠桃\PanTao_2\Lib\src\app_ringbuf.c': source file has been changed.
+'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\MainTask.c': source file has been changed.
 
-[2026-07-07 10:38:06]	[done]
+[2026-07-07 11:55:21]	[done]
+	build successfully !
+
+[2026-07-07 11:55:36]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\MainTask.c': source file has been changed.
+
+[2026-07-07 11:55:37]	[done]
+	build successfully !
+
+[2026-07-07 11:57:45]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'e:\单片机项目\Source\蟠桃\PanTao_2\Task\src\MainTask.c': source file has been changed.
+
+[2026-07-07 11:57:46]	[done]
 	build successfully !
 
