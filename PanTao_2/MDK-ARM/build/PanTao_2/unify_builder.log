@@ -25,3 +25,11 @@ These source files will be recompiled
 [2026-07-07 10:33:57]	[done]
 	build successfully !
 
+[2026-07-07 10:38:05]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'e:\单片机项目\Source\蟠桃\PanTao_2\Lib\src\app_ringbuf.c': source file has been changed.
+
+[2026-07-07 10:38:06]	[done]
+	build successfully !
+
